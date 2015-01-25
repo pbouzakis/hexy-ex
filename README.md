@@ -5,7 +5,9 @@ Example of using hexagonal (aka ports and adapter) architecture on the frontend 
 
 npm scripts
 ===========
- - `npm run build` to bundle (w/ gulp + browserify) JS for the browser.
+Once cloned, first install dependencies via `npm install`.
+
+ - `npm run build` to bundle AND watch (w/ gulp + browserify + watchify) JS for the browser.
  - `npm start` run python simple http server. Here for convenience, use whatever you want.
  - `npm test` duh. mocha.
  - `npm run lint` jshint all the things.
