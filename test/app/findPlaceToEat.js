@@ -1,10 +1,14 @@
 "use strict";
 
-import selectAPlaceToEat from "application/actions/selectAPlaceToEat";
+import selectAPlaceToEat from "application/actions/findPlaceToEat";
+import domain from "application/domain";
+import inMemRepo from "../../lib/adapters/storage/memory/placesRepo";
+
 let { RANDOM, POPULAR, CUISINE } = selectAPlaceToEat;
 
-describe("Application action: `selectAPlaceToEat`", () => {
+describe("Application action: `findPlaceToEat`", () => {
     beforeEach(() => {
+        domain.inject({ placesRepo: inMemRepo() });
         this.selectAPlaceToEat = selectAPlaceToEat();
     });
 
