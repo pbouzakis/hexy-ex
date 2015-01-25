@@ -21,9 +21,12 @@
     "6to5": "^2.13.7",
     "6to5ify": "^3.1.2",
     "browserify": "^8.1.1",
+    "chai": "^1.10.0",
     "gulp": "^3.8.10",
     "gulp-livereload": "^3.5.0",
     "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0",
     "vinyl-source-stream": "^1.0.0",
     "watchify": "^2.2.1"
   },

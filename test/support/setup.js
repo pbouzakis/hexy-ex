@@ -1,3 +1,10 @@
 "use strict";
 
-// TODO. Might want to use another assertion lib like chai.
+var chai = require("chai");
+var sinonChai = require("sinon-chai");
+
+global.sinon = require("sinon");
+global.expect = chai.expect;
+
+chai.use(sinonChai);
+chai.should();
