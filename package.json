@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.2",
-    "director": "^1.2.7"
+    "director": "^1.2.7",
+    "react": "^0.12.2"
   }
 }
