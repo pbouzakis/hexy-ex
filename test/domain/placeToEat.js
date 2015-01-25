@@ -1,6 +1,6 @@
 "use strict";
 
-import placeToEat from "../../lib/domain/placeToEat";
+import placeToEat from "application/domain/placeToEat";
 
 describe("Domain entity: A `placeToEat`", () => {
     beforeEach(() => {

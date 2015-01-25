@@ -1,6 +1,6 @@
 "use strict";
 
-import selectAPlaceToEat from "../../lib/app/selectAPlaceToEat";
+import selectAPlaceToEat from "application/actions/selectAPlaceToEat";
 let { RANDOM, POPULAR, CUISINE } = selectAPlaceToEat;
 
 describe("Application action: `selectAPlaceToEat`", () => {
