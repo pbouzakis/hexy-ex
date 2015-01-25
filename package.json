@@ -2,7 +2,7 @@
   "name": "hexy-ex",
   "version": "1.0.0",
   "description": "Example of frontend application in JS under hex architecture.",
-  "main": "main.js",
+  "main": "./lib/main.js",
   "scripts": {
     "build": "./node_modules/.bin/gulp",
     "start": "cd public && python -m SimpleHTTPServer 8000",
