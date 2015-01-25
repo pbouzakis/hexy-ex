@@ -2,6 +2,7 @@ hexy-ex
 =======
 
 Example of using hexagonal (aka ports and adapter) architecture on the frontend in JS.
+Contains a sample application `Places To Eat` showcasing how this can be done.
 
 npm scripts
 ===========
@@ -17,7 +18,27 @@ source code written in ES6 (aka ES 2015)
 Using 6to5 to transpile source into valid ES5. 
 Friendly FYI :)
 
-Entity State
+project structure
+=================
+The application core is located inside node_modules/application.
+This is a bundled npm package. In a real application, this might make sense as it's own external
+package.
+
+Inside the application package:
+
+```
+node_modules/application/
+    actions // Implement use cases, features, what the application can do.
+    domain  // Holds models, entities, value objects. Simple core business objects.
+```
+
+The sample application specifies 2 ports: presentation and storage.
+The adapters are located in the top level lib folder
+
+- adapters/presentation
+- adapters/storage
+
+entity state
 ============
 Entities are injected with a state object.
 This object is live meaning that it provides hooks for application adapters
